@@ -1,3 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+
 h3 {
   margin-bottom: 0;
+}
+.header{
+	display: flex;
+	justify-content: center;
+}
+
+.links {
+	display: flex;
+	flex-direction: row;
+	padding-left: 0px;
+
+}
+
+.links li{
+	list-style-type: none;
+	background-color: #1aa6b7;
+	margin: 0 10px 0  0;
+	padding: 10px 20px 10px 20px;
+	width: 30%;
+	text-align: center;
+	
+	font-size: 0.7em;
+
+}
+
+.links a{
+	text-decoration: none;
+	color: #fff;
+
+}
+.facts{
+	border-spacing: 0;
+	border: 1px solid #f6f6f6;
+	padding: 10px;
+
+}
+
+.facts > tbody{
+	width: 100%;
+
+}
+
+.facts th{
+	text-align: left;
+	width: 1%;
+
+}
+.facts tr:nth-child(even){
+	background-color: #e8e8e8;
+}
+.facts tr td{
+    width: 6%;
+    height: 30px;
 }

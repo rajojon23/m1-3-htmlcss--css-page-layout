@@ -1,0 +1,43 @@
+body{
+	margin: 0 ;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+	margin: 0 auto;
+	font-size: 1.5em;
+	display: flex;
+	width: 565px;
+	height: 100vh; /*will take full height of screen*/
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.container p{
+	margin: 0 0 11px 0;
+}
+
+.limited{
+	margin: 0 auto;
+	border: 1.8px solid #000;
+	width: 160px;
+	padding: 5px 0 5px 0;
+	font-size: 0.8em;
+	border-radius: 4px;
+}
+.container h3{
+	margin: 11px 0 0 0 ;
+}
+.find_store{
+	text-decoration:none;
+	color: 	#4f9bd9;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.find_store:after{
+	content: '>';
+}

@@ -1,0 +1,57 @@
+* { 
+box-sizing: border-box; 
+} 
+
+
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+nav{
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	/*padding: 1px 0 1px 0;*/
+}
+
+
+nav ul{
+	display: flex; 
+	justify-content: center ;
+	padding-bottom: 10px;
+
+}
+nav ul li {
+
+	display: flex;
+	list-style-type: none;
+  	align-items: center;
+  	margin: 0 30px 0 30px;
+
+
+}
+.icon{
+	padding-top: 10px;
+}
+
+nav li.link{
+	padding-top: 10px;
+}
+
+nav li.link:hover{
+	color: 	#999999;
+	transition: 0.2s; 
+	cursor: pointer;
+}
+
+/*for changing the apple svg color, uses css filer property 
+
+https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
+*/
+nav li img.icon:hover{
+	filter: invert(63%) sepia(0%) saturate(0%) hue-rotate(243deg) brightness(96%) contrast(95%);
+	cursor: pointer;
+}
+

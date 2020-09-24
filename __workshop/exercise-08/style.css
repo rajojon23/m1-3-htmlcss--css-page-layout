@@ -1,12 +1,84 @@
+*{
+	box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
 }
 
 .header {
+	text-align: center;
+	color: #fff;
+	background-color: #1aa6b7;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	font-size: 1.3em;
+	padding: 10px 0 10px 0;
 }
 
 .registration-form {
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	width: 55%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+input{
+	width: 230px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #1aa6b7;
+}
+
+.registration-form > div:first-child{
+	display: flex;
+	flex-direction: column;
+
+	color: blue;
+}
+.section{
+	border-top: 1px solid #DDDDDD;
+	margin-top: 5px;
+}
+.section div{
+
+
+}
+.section > div input{
+	width: 10px;
+
+}
+.section + div input{ /*next adjacent element, which is the 'Extras' section*/
+	width: 10px;
+}
+
+
+
+/*
+direct descendant of the class, last element of the target type
+AND target the label element inside it
+*/
+.registration-form > div:last-of-type > label{ 
+	display: flex;
+	flex-direction: column;
+}
+
+.registration-form > div:last-of-type > label > textarea{
+	background-color:  #F5F5F5;
+}
+
+/*
+get that classless div just below input password
+*/
+input[type="password"] + div {
+ 	display: flex;
+ 	flex-direction: column;
+}
+.section > div label{
+
+
 }
 
 .text-field {
@@ -17,6 +89,7 @@ body {
 }
 
 label {
+	text-align: center;
 }
 
 .section {
@@ -32,7 +105,14 @@ textarea {
 }
 
 .form-button {
+	width: 75px;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 8px 0 8px 0;
+	background-color: #fff;
+	border: 1px solid #1aa6b7;
 }
 
 .form-button:hover {
+
 }
